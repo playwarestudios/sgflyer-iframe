@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Modal Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Image and Description -->
+  <div class="container">
+    <br />
+    <div class="row">
+      <h2> SG Flyer Plus Test Page </h2>
+      <div />
+      <hr />
+      <div class="row">
+        <div class="col-md-6">
+          <img src="https://www.singaporeflyer.com/storage/carousels/March2023/MHRgdzH85TvdapYJGTmH.png"
+            alt="Singapore Flyer" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <p>The Singapore Flyer is a ferris wheel at Marina Bay in Singapore. It is one of the largest ferris wheels in
+            the world, with a height of 165 meters (541 feet) and a diameter of 128 meters (420 feet). The wheel has 28
+            glass capsules, each with a capacity of 28 people, for a total of 816 riders. The ride takes about 30
+            minutes, and the wheel completes a full rotation every 25 minutes.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid of Images -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="https://placehold.co/180x120/orange/white?font=open-sans&text=Open%20Sans" alt="Image 1"
+            class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="https://placehold.co/180x120/blue/white?font=open-sans&text=Roboto" alt="Image 2" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="https://placehold.co/180x120/violet/white?font=open-sans&text=Sans%20Serif" alt="Image 3"
+            class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 40px;">
+      <div class="col-md-4">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Open Singapore Flyer
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Singapore Flyer eTickets</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe src="https://www.singaporeflyer.com/" width="100%" height="400px" frameborder="0"
+              allowfullscreen></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
